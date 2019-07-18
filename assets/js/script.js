@@ -7,7 +7,7 @@ $(document).ready(function() {
 });
 
 function list() {
-    $.getJSON("http://cdn.jsdelivr.net/gh/noeramadhan/noeramadhan.github.io/master/posts/list.json", function(data) {
+    $.getJSON("posts/list.json", function(data) {
         var content = '<div class="card border-0 text-center"><ul class="list-group list-group-flush">';
         $.each(data, function(key, val) {
             val.forEach(function(data) {
