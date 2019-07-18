@@ -29,6 +29,7 @@ function route() {
 function read(name) {
     $.ajax({
         url: 'posts/' + name + '.md',
+        datatype: 'markdown',
         success: function(data) {
             var converter = new showdown.Converter({
                     metadata: true
