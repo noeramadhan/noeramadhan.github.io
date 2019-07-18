@@ -28,8 +28,7 @@ function route() {
 
 function read(name) {
     $.ajax({
-        url: 'posts/' + name + '.md',
-        datatype: 'markdown',
+        url: 'https://cdn.jsdelivr.net/gh/noeramadhan/noeramadhan.github.io@master/posts/' + name + '.md',
         success: function(data) {
             var converter = new showdown.Converter({
                     metadata: true
