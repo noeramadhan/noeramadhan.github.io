@@ -1,0 +1,9 @@
+{
+  "posts": [
+    {
+      "title": "Example Title",
+      "slug": "example",
+      "date": "2012-04-23"
+    }
+  ]
+}
