@@ -49,6 +49,15 @@
                 url: 'posts/list.json',
                 dataType: 'json',
                 success: function(data) {
+                	
+                	function sort(array, key){
+                		return array.sort(function(a, b){
+                			var x = a[key];
+                			var y = b[key];
+                			return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+                		});
+                	}
+                	data.posts = sort(data.posts, 'date');
                     var content = '<div class="card border-0 text-center"><ul class="list-group list-group-flush">';
                     $.each(data.posts, function(key, helper) {
                         content += '<li class="list-group-item"><a href="#' + helper['slug'] + '" class="link" id="list-item-slug"><h5 class="display-4"><strong id="list-item-title">' + helper['title'] + '</strong></h5></a><small class="text-muted">Posted on <span id="list-item-date">' + helper['date'] + '</span></small></li>';
@@ -108,4 +117,5 @@
 </body>
 
 </html>
+    
     
