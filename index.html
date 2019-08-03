@@ -46,13 +46,12 @@
 
         function list() {
             $.ajax({
-                url: base + 'list.json',
+                url: 'posts/list.json',
+                dataType: 'json',
                 success: function(data) {
                     var content = '<div class="card border-0 text-center"><ul class="list-group list-group-flush">';
-                    $.each(data, function(key, val) {
-                        val.forEach(function(data) {
-                            content += '<li class="list-group-item"><a href="#' + data['slug'] + '" class="link" id="list-item-slug"><h5 class="display-4"><strong id="list-item-title">' + data['title'] + '</strong></h5></a><small class="text-muted">Posted on <span id="list-item-date">' + data['date'] + '</span></small></li>';
-                        });
+                    $.each(data.posts, function(key, helper) {
+                        content += '<li class="list-group-item"><a href="#' + helper['slug'] + '" class="link" id="list-item-slug"><h5 class="display-4"><strong id="list-item-title">' + helper['title'] + '</strong></h5></a><small class="text-muted">Posted on <span id="list-item-date">' + helper['date'] + '</span></small></li>';
                     });
                     content += '</ul></div>';
                     $('#content').append(content);
@@ -109,3 +108,4 @@
 </body>
 
 </html>
+    
