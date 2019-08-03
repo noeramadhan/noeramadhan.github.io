@@ -2,7 +2,7 @@
 title: Tentang Tertawa
 date: 3/8/2019
 ---
-tentang tertawa - Suatu malam ketika mencoba untuk menenangkan diri di sebuah warung kopi. Sendirian, menikmati suasana sembari membiarkan emosi berlarian hingga kelelahan lalu tertidur. Meja sebelah, mulai terisi oleh dua orang mahasiswi. Sepertinya mereka berasal dari fakultas sebelah.
+Suatu malam ketika mencoba untuk menenangkan diri di sebuah warung kopi. Sendirian, menikmati suasana sembari membiarkan emosi berlarian hingga kelelahan lalu tertidur. Meja sebelah, mulai terisi oleh dua orang mahasiswi. Sepertinya mereka berasal dari fakultas sebelah.
 
 Beberapa menit kemudian, datanglah beberapa orang lagi yang menyusul bergabung di meja itu. Mereka memulai percakapan, beberapa tidak sengaja tertangkap karena otak sudah memindahkan fokus. Ketika mendengarnya, apa yang dibahas adalah tentang tugas, dosen, lomba, nilai, kuranya waktu untuk tidur dan beberapa hal lain dengan topik yang khas dengan stereotip.
 
