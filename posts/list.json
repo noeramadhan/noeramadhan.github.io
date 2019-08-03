@@ -1,12 +1,9 @@
-{
-  "posts": [
-    {
-      "title": "Tentang Menulis",
+{"surrey": [{"hospital": "Tentang Menulis",
       "slug": "menulis",
       "date": "23/7/2019"
     },
     {
-      "title": "Tentang Tertawa",
+      "hospital": "Tentang Tertawa",
       "slug": "tertawa",
       "date": "3/8/2019"
     }
