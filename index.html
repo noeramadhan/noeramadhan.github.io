@@ -135,8 +135,6 @@
         }
 
 async function onLoadAsync() {
-    console.log("TEST");
-    console.log(navigator.serviceWorker);
 
     //load the history from cache
     // let history = getLocalHistory()
@@ -147,7 +145,6 @@ async function onLoadAsync() {
     // }
 
     if (navigator.serviceWorker) {
-        console.log("testss");
         try {
             let serviceWorker = await navigator.serviceWorker.register('service.js')
             console.log(`Service worker registered ${serviceWorker}`)

@@ -8,7 +8,7 @@ const CACHE_NAME = "V1"
 this.addEventListener('install', async function() {
     const cache = await caches.open(CACHE_NAME);
     cache.addAll([
-        '/index.html'
+        '/index.html',
         '/posts/list.json',
     ])
 })
