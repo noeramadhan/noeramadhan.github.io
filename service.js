@@ -1,59 +1,58 @@
-const CACHE_NAME = "V1"
+var APP_PREFIX = 'noblog_'     // Identifier for this app (this needs to be consistent across every cache update)
+var VERSION = 'version_01'              // Version of the off-line cache (change this value everytime you want to update cache)
+var CACHE_NAME = APP_PREFIX + VERSION
+var URLS = [                            // Add URL you want to cache in this list.
+  '/index.html',                     // If you have separate JS/CSS files,
+  '/posts/list.json'            // add path to those files here
+]
 
-/**
- * The install event is fired when the registration succeeds. 
- * After the install step, the browser tries to activate the service worker.
- * Generally, we cache static resources that allow the website to run offline
- */
-this.addEventListener('install', async function() {
-    const cache = await caches.open(CACHE_NAME);
-    cache.addAll([
-        '/index.html',
-        '/posts/list.json',
-    ])
+// Respond with cached resources
+self.addEventListener('fetch', function (e) {
+  console.log('fetch request : ' + e.request.url)
+  e.respondWith(
+    caches.match(e.request).then(function (request) {
+      if (request) { // if cache is available, respond with cache
+        console.log('responding with cache : ' + e.request.url)
+        return request
+      } else {       // if there are no cache, try fetching request
+        console.log('file is not cached, fetching : ' + e.request.url)
+        return fetch(e.request)
+      }
+
+      // You can omit if/else for console.log & put one line below like this too.
+      // return request || fetch(e.request)
+    })
+  )
 })
 
-/**
- * The fetch event is fired every time the browser sends a request. 
- * In this case, the service worker acts as a proxy. We can for example return the cached
- * version of the ressource matching the request, or send the request to the internet
- * , we can even make our own response from scratch !
- * Here, we are going to use cache first strategy
- */
-self.addEventListener('fetch', event => {
-    //We defind the promise (the async code block) that return either the cached response or the network one
-    //It should return a response object
-    const getCustomResponsePromise = async => {
-        console.log(`URL ${event.request.url}`, `location origin ${location}`)
+// Cache resources
+self.addEventListener('install', function (e) {
+  e.waitUntil(
+    caches.open(CACHE_NAME).then(function (cache) {
+      console.log('installing cache : ' + CACHE_NAME)
+      return cache.addAll(URLS)
+    })
+  )
+})
 
-        try {
-            //Try to get the cached response
-            const cachedResponse = await caches.match(event.request)
-            if (cachedResponse) {
-                //Return the cached response if present
-                console.log(`Cached response ${cachedResponse}`)
-                return cachedResponse
-            }
+// Delete outdated caches
+self.addEventListener('activate', function (e) {
+  e.waitUntil(
+    caches.keys().then(function (keyList) {
+      // `keyList` contains all cache names under your username.github.io
+      // filter out ones that has this app prefix to create white list
+      var cacheWhitelist = keyList.filter(function (key) {
+        return key.indexOf(APP_PREFIX)
+      })
+      // add current cache name to white list
+      cacheWhitelist.push(CACHE_NAME)
 
-            //Get the network response if no cached response is present
-            const netResponse = await fetch(event.request)
-            console.log(`adding net response to cache`)
-
-            //Here, we add the network response to the cache
-            let cache = await caches.open(CACHE_NAME)
-
-            //We must provide a clone of the response here
-            cache.put(event.request, netResponse.clone())
-
-            //return the network response
-            return netResponse
-        } catch (err) {
-            console.error(`Error ${err}`)
-            throw err
+      return Promise.all(keyList.map(function (key, i) {
+        if (cacheWhitelist.indexOf(key) === -1) {
+          console.log('deleting cache : ' + keyList[i] )
+          return caches.delete(keyList[i])
         }
-    }
-
-    //In order to override the default fetch behavior, we must provide the result of our custom behavoir to the
-    //event.respondWith method
-    event.respondWith(getCustomResponsePromise())
+      }))
+    })
+  )
 })
