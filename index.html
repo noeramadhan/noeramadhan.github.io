@@ -90,69 +90,66 @@
         }
 
         function route() {
-            $('.content').html('');
+            document.getElementsByClassName('content')[0].innerHTML = "";
             var file = (location.hash ? location.hash : "#index").slice(1);
             file == "index" ? list() : read(file);
         }
 
         function read(name) {
-            $.ajax({
-                url: APP_CDN + name + '.md',
-                cache: true,
-                success: function(data) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', APP_CDN + name + '.md');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var data = xhr.responseText;
                     var converter = new showdown.Converter({
                             metadata: true
                         }),
                         html = converter.makeHtml(data),
                         meta = converter.getMetadata();
                     if (meta['title'] !== undefined) {
-                        $('.content').append('<p><h5 class="font-weight-bold mb-0 pb-0">' + meta['title'] + '</h5><small class="text-muted">Posted on <span class="date"><small>' + meta['date'] + '</small></span></small></p>');
+                        document.getElementsByClassName('content')[0].innerHTML += '<p><h5 class="font-weight-bold mb-0 pb-0">' + meta['title'] + '</h5><small class="text-muted">Posted on <span class="date"><small>' + meta['date'] + '</small></span></small></p>';
                     }
-                    $('.content').append(html);
+                    document.getElementsByClassName('content')[0].innerHTML += html;
                     document.title = "/// | " + meta['title'];
-                },
-                error: function() {
+                }else{
                     read("404");
                 }
-            });
+            };
+            xhr.send();
         }
 
         function list() {
-            $.ajax({
-                url: APP_BASE + 'list.json',
-                dataType: 'json',
-                cache: false,
-                success: function(data) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', APP_BASE + 'list.json');
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var data = JSON.parse(xhr.responseText);
                     data.posts = sort(data.posts, 'date');
                     var content = '';
                     $.each(data.posts, function(key, meta) {
-                        content += '<div class="row"><div class="col-5 p-2 text-right">' + meta['date'] + '</div><div class="col p-2 pl-4"><a href="#' + meta['slug'] + '"><span class="title font-weight-bold">' + meta['title'] + '</span></a><br><span class="text-muted">/' + meta['slug'] + '</span></div></div>';
+                        content += '<div class="row"><div class="col-5 p-2 text-right">';
+                        content += meta['date'] + '</div><div class="col p-2 pl-4"><a href="#';
+                        content += meta['slug']  + '"><span class="title font-weight-bold">';
+                        content += meta['title'] + '</span></a><br><span class="text-muted">/';
+                        content += meta['slug']  + '</span></div></div>';
                     });
-                    $('.content').append(content);
+                    document.getElementsByClassName('content')[0].innerHTML += content;
                     document.title = "///";
                 }
-            });
+            };
+            xhr.send();
         }
 
-async function onLoadAsync() {
-
-    //load the history from cache
-    // let history = getLocalHistory()
-    // if (history !== null) {
-    //     //set the animeHistory array and update the display
-    //     animeHistory = history
-    //     animeHistory.forEach(anime => addAnimeToHistoryTag(anime))
-    // }
-
-    if (navigator.serviceWorker) {
-        try {
-            let serviceWorker = await navigator.serviceWorker.register('service.js')
-            console.log(`Service worker registered ${serviceWorker}`)
-        } catch (err) {
-            console.error(`Failed to register service worker: ${err}`)
+        async function onLoadAsync() {
+            if (navigator.serviceWorker) {
+                try {
+                    let serviceWorker = await navigator.serviceWorker.register('service.js')
+                    // console.log(`Service worker registered ${serviceWorker}`)
+                } catch (err) {
+                    // console.error(`Failed to register service worker: ${err}`)
+                }
+            }
         }
-    }
-}
 
     </script>
 </body>
