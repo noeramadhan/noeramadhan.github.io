@@ -135,6 +135,7 @@
         }
 
 async function onLoadAsync() {
+    console.log("TEST");
     console.log(navigator.serviceWorker);
 
     //load the history from cache
@@ -145,7 +146,7 @@ async function onLoadAsync() {
     //     animeHistory.forEach(anime => addAnimeToHistoryTag(anime))
     // }
 
-    if ('serviceWorker' in navigator) {
+    if (navigator.serviceWorker) {
         console.log("testss");
         try {
             let serviceWorker = await navigator.serviceWorker.register('service.js')
