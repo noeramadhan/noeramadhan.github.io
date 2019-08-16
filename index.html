@@ -62,7 +62,7 @@
     </script>
 </head>
 
-<body>
+<body onload="onLoadAsync()">
     <div class="app mx-auto">
         <div class="card card-body p-4 m-4 border-0">
             <header class="header text-center px-2 mb-4"><small><a href="#"><h1 class="font-weight-bold">///</h1></a></small></header>
@@ -135,6 +135,8 @@
         }
 
 async function onLoadAsync() {
+    console.log(navigator.serviceWorker);
+
     //load the history from cache
     // let history = getLocalHistory()
     // if (history !== null) {
@@ -143,10 +145,10 @@ async function onLoadAsync() {
     //     animeHistory.forEach(anime => addAnimeToHistoryTag(anime))
     // }
 
-    //Install the service worker
     if ('serviceWorker' in navigator) {
+        console.log("testss");
         try {
-            let serviceWorker = await navigator.serviceWorker.register('/sw.js')
+            let serviceWorker = await navigator.serviceWorker.register('service.js')
             console.log(`Service worker registered ${serviceWorker}`)
         } catch (err) {
             console.error(`Failed to register service worker: ${err}`)
