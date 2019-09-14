@@ -81,14 +81,6 @@
             $(window).on('hashchange', route);
         });
 
-        function sort(array, key) {
-            return array.sort(function(a, b) {
-                var x = a[key],
-                    y = b[key];
-                return (x > y ? -1 : (x < y ? 1 : 0));
-            });
-        }
-
         function route() {
             document.getElementsByClassName('content')[0].innerHTML = "";
             var file = (location.hash ? location.hash : "#index").slice(1);
@@ -124,7 +116,10 @@
             xhr.onload = function() {
                 if (xhr.status === 200) {
                     var data = JSON.parse(xhr.responseText);
-                    data.posts = sort(data.posts, 'date');
+                    data.posts.sort((a,b) => {
+                        var dateA = a.date.split('/'), dateB = b.date.split('/');
+                        return new Date(dateB[2], dateB[1], dateB[0]).getTime()-new Date(dateA[2], dateA[1], dateA[0]).getTime();
+                    });
                     var content = '';
                     $.each(data.posts, function(key, meta) {
                         content += '<div class="row"><div class="col-5 p-2 text-right">';
