@@ -90,7 +90,7 @@
         function read(name) {
             var xhr = new XMLHttpRequest();
             xhr.open('GET', APP_CDN + name + '.md');
-            xhr.onload = function() {
+            xhr.onload = () => {
                 if (xhr.status === 200) {
                     var data = xhr.responseText;
                     var converter = new showdown.Converter({
@@ -113,7 +113,7 @@
         function list() {
             var xhr = new XMLHttpRequest();
             xhr.open('GET', APP_BASE + 'list.json');
-            xhr.onload = function() {
+            xhr.onload = () => {
                 if (xhr.status === 200) {
                     var data = JSON.parse(xhr.responseText);
                     data.posts.sort((a,b) => {
@@ -121,7 +121,7 @@
                         return new Date(dateB[2], dateB[1], dateB[0]).getTime()-new Date(dateA[2], dateA[1], dateA[0]).getTime();
                     });
                     var content = '';
-                    $.each(data.posts, function(key, meta) {
+                    $.each(data.posts, (key, meta) => {
                         content += '<div class="row"><div class="col-5 p-2 text-right">';
                         content += meta['date'] + '</div><div class="col p-2 pl-4"><a href="#';
                         content += meta['slug']  + '"><span class="title font-weight-bold">';
