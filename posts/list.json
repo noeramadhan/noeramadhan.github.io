@@ -1,43 +1,12 @@
-{
-    "posts":[
-    {
-        "title": "Tentang Menulis", "slug": "menulis", "date": "23/7/2019"
-    }
-    ,
-    {
-        "title": "Tentang Tertawa", "slug": "tertawa", "date": "3/8/2019"
-    }
-    ,
-    {
-        "title": "Tentang Disiplin", "slug": "disiplin", "date": "5/8/2019"
-    }
-    ,
-    {
-        "title": "Tentang Kepala", "slug": "kepala", "date": "7/8/2019"
-    }
-    ,
-    {
-        "title": "Tentang Rasa", "slug": "rasa", "date": "14/8/2019"
-    }
-    ,
-    {
-        "title": "Tentang Pikiran", "slug": "pikiran", "date": "31/8/2019"
-    }
-    ,
-    {
-        "title": "Tentang Diskusi", "slug": "diskusi", "date": "6/8/2019"
-    }
-    ,
-    {
-        "title": "Tentang Masa Depan", "slug": "masa-depan", "date": "16/9/2019"
-    }
-    ,
-    {
-        "title": "Tentang Sepi", "slug": "sepi", "date": "18/9/2019"
-    }
-    ,
-    {
-        "title": "Tentang Cinta", "slug": "cinta", "date": "18/9/2019"
-    }
-    ]
-}
+{ "posts": [
+    { "date": "23/7/2019",  "title": "Tentang Menulis",     "slug": "menulis"     },
+    { "date": "3/8/2019",   "title": "Tentang Tertawa",     "slug": "tertawa"     },
+    { "date": "5/8/2019",   "title": "Tentang Disiplin",    "slug": "disiplin"    },
+    { "date": "7/8/2019",   "title": "Tentang Kepala",      "slug": "kepala"      },
+    { "date": "14/8/2019",  "title": "Tentang Rasa",        "slug": "rasa"        },
+    { "date": "31/8/2019",  "title": "Tentang Pikiran",     "slug": "pikiran"     },
+    { "date": "6/8/2019",   "title": "Tentang Diskusi",     "slug": "diskusi"     },
+    { "date": "16/9/2019",  "title": "Tentang Masa Depan",  "slug": "masa-depan"  },
+    { "date": "18/9/2019",  "title": "Tentang Sepi",        "slug": "sepi"        },
+    { "date": "18/9/2019",  "title": "Tentang Cinta",       "slug": "cinta"       }
+]}
