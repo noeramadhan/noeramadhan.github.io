@@ -2,15 +2,15 @@
 title: Tentang Buruh
 date: 27/10/2019
 ---
-Saya adalah produk dari pabrik pekerja yang bernama universitas. Wisuda hanyalah ilusi kebebasan belaka karena saya akan kembali lagi ke pabrik. Jangan kira pabrik hanyalah tempat buruh kasar. Kalian yang berdasi dan tinggal di cubible dengan interior yang humanis adalah sama: buruh. Kalian punya bos yang harus kalian patuhi, kalian diberi upah atas kerja kalian. Kalian diharuskan untuk mengaggungkan efisiensi dan efektivitas karena harus mengejar dan meningkatkan target produksi agar profit meningkat.
+Saya adalah produk dari pabrik pekerja yang bernama universitas. Wisuda hanyalah ilusi kebebasan belaka karena saya akan kembali lagi ke pabrik. Jangan kira pabrik hanyalah tempat buruh kasar. Kalian yang berdasi dan tinggal di _cubible_ dengan interior yang humanis adalah sama: buruh. Kalian punya bos yang harus kalian patuhi, kalian diberi upah atas kerja kalian. Kalian diharuskan untuk mengagungkan efisiensi dan efektivitas karena harus mengejar dan meningkatkan target produksi agar profit meningkat.
 
 Kita adalah buruh sejak dalam rahim ibu yang juga buruh.
 
 Lantas, saya bertanya, apa yang akan terjadi jika buruh berhenti bekerja? Siapa yang akan rugi? Siapa yang tidak akan bisa makan? Kita tetap bisa makan, karena masih ada petani yang menanam kehidupan.
 
-Aku bekerja di pabrik karena tidak ada pilihan lain. Jika ada motivator yang bicara dengan mudahnya bahwa aku hanya kurang giat belajar dan bekerja, dia belum tahu rasanya menjadi miskin karena diharuskan miskin oleh negara, aparat, tentara, polisi, saudagar, preman, atau dalam bahasa yang bekin kini: oligarki. Mungkin dia butuh menjajal guilotine.
+Aku bekerja di pabrik karena tidak ada pilihan lain. Jika ada motivator yang bicara dengan mudahnya bahwa aku hanya kurang giat belajar dan bekerja, dia belum tahu rasanya menjadi miskin karena diharuskan miskin oleh negara, aparat, tentara, polisi, saudagar, preman, atau dalam bahasa yang beken kini: oligarki. Mungkin dia butuh menjajal _guilotine_.
 
-Aku tak tahu apa itu oligarki. Apa yang aku tahu adalah oli yang menjadi pelumas dieselku yang usang dan perlu diganti tapi harganya tiap tahun makin naik dan kebutuhkan hidup semakin mahal.
+Aku tak tahu apa itu oligarki. Apa yang aku tahu adalah oli yang menjadi pelumas dieselku yang usang dan perlu diganti tapi harganya tiap tahun makin naik dan kebutuhan hidup semakin mahal.
 
 Mengapa harga makin mahal? Apakah karena banyak orang? Apakah karena kurang bahan? Atau karena pasar sudah tidak dapat dimonopoli untuk mengambil untung seluas-luasnya?
 

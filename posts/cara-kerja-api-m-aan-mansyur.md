@@ -6,7 +6,7 @@ Aku masih ingat, sebelum aku terbakar dengan tulisan yang serupa agitasi, aku su
 
 Ketika dilihat sekilas, puisinya memang tidak dengan lantang berkata penolakan bagai molotov yang meledak di gedung negara.
 
-Puisinya lebh menyerupai botol, minyak, dan kain. Kemudian kemarahan yang selama ini tidak aku sadari telah aku miliki, menyulutnya. Melipat gandakan menjali ledakan di seluruh penjuru kota.
+Puisinya lebih menyerupai botol, minyak, dan kain. Kemudian kemarahan yang selama ini tidak aku sadari telah aku miliki, menyulutnya. Melipat gandakan menjadi ledakan di seluruh penjuru kota.
 
 Mungkin karena puisi adalah anak dari penyair. Ketika dilahirkan puisi bebas menentukan arah hidupnya sendiri.
 

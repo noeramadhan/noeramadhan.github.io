@@ -6,4 +6,4 @@ Sejarah, terlepas siapa yang menuliskannya, seharusnya dapat membuat kita menjad
 
 Namun, ketika melihat kondisi saat ini, apakah memang kita sudah belajar dari sejarah? Apakah memang kita tidak terjebak dalam romantisme masa lalu? Karena, ketika membaca kembali teks-teks tulisan yang terlahir pada masa-masa sebelumnya, di mana kondisi realitas memang berbeda, apa yang menjadi permasalahan tidaklah jauh berbeda.
 
-Lantas, apakah kita memang terjebak dalam roda sejarah, dimana kita selalu mengulanginya? Ah, masa depan adalah tanjakan yang belum pernah ada jalan untuk ditapaki sebelumnya.
+Lantas, apakah kita memang terjebak dalam roda sejarah, di mana kita selalu mengulanginya? Ah, masa depan adalah tanjakan yang belum pernah ada jalan untuk ditapaki sebelumnya.
