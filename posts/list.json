@@ -19,5 +19,6 @@
     { "date": "27/10/2019", "title": "Tentang Buruh",                                                             "slug": "buruh"                                                   },
     { "date": "27/10/2019", "title": "Tentang Iklan",                                                             "slug": "iklan"                                                   },
     { "date": "3/11/2019",  "title": "Tentang Membaca",                                                           "slug": "membaca"                                                 },
-    { "date": "16/11/2019", "title": "Tentang Revolusi",                                                          "slug": "revolusi"                                                }
+    { "date": "16/11/2019", "title": "Tentang Revolusi",                                                          "slug": "revolusi"                                                },
+    { "date": "21/12/2019", "title": "Tentang Orang-Orang",                                                       "slug": "orang-orang"                                             }
 ]}
