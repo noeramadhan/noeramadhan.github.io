@@ -9,6 +9,7 @@ Dahulu, aku masih ingat, untuk melepaskan diri dari pikiran tentang hal-hal nega
 Waktu awal kuliah, aku rasa keadaanku sudah agak membaik. Aku dapat belajar dengan ‘benar’ dibuktikan dengan IP yang tinggi. Lantas, kemudian aku menemukan buku. Aku merasa lebih hidup, atau mungkin aku merasa aku benar-benar hidup. Belum lagi dengan diskusi dan kegiatan berpikir lainnya.
 
 Itu dahulu, aku merasa mempunyai suatu tempat di dunia, setelah masa sekolah menengah atas yang banyak orang kata adalah masa pencarian jati diri. Ketika aku merasa mempunyai teman, keluarga, rumah, untuk kembali setelah berpetualang.
+
 Sekarang, setiap malam, ada perasaan yang mengganjal. Aku bersyukur memang, kesukaanku untuk membaca buku telah kembali. Kini aku dapat menghabiskan beberapa buku dalam satu bulan. Tapi, pikiran lama yang aku rasa ku tempatkan di sudut belakang kepala kembali hadir.
 
 “Apakah ada tempat untuk ku di dunia ini?
@@ -16,6 +17,7 @@ Sekarang, setiap malam, ada perasaan yang mengganjal. Aku bersyukur memang, kesu
 Pikiran tersebut hadir setelah beberapa pikiran yang lainnya datang terlebih dahulu. Apakah aku dapat lulus? Apakah aku harus bekerja sesuai disiplin keilmuan? Apakah aku harus tunduk pada uang? Apakah aku dapat menikah? Apakah aku dapat hidup lebih dari umur 25?
 
 Terlintas Guts Over Fear dari Marshall. Seketika, terbayang visual lirik yang bercerita tentang keadaan kehilangan dorongan untuk melakukan apa yang selama ini dicintai.
+
 “It was ingrained in me. That I wouldn't amount to a shit stain, I thought. No wonder I had to unlearn everything my brain was taught. "Do I really belong in this game?", I pondered. I just wanna play my part. Should I make waves or not? So back and forth in my brain the tug of war wages on.” Sebuah keraguan yang membuka pikiran lain untuk masuk dan menyerang lebih dalam.
 
 Pun dengan bait berikut, “And it just breaks my heart to look at all the pain I caused. But what am I gonna do when the rage is gone. And the lights go out in that trailer park. And the window is closing and there's nowhere else that I can go with flows and I'm frozen. ‘Cause there's no more emotion for me to pull from.”
