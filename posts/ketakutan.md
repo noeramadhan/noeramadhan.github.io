@@ -11,7 +11,7 @@ Dahulu, aku masih ingat, untuk melepaskan diri dari pikiran tentang hal-hal nega
 Waktu awal kuliah, aku rasa keadaanku sudah agak membaik. Aku dapat belajar dengan ‘benar’ dibuktikan dengan IP yang tinggi. Lantas, kemudian aku menemukan buku. Aku merasa lebih hidup, atau mungkin aku merasa aku benar-benar hidup. Belum lagi dengan diskusi dan kegiatan berpikir lainnya.
 
 
-Itu dahulu, aku merasa mempunyai suatu tempat di dunia, setelah masa sekolah menengah atas yang banyak orang kata adalah masa pencarian jati diri. Ketika aku merasa mempunyai teman, keluarga, rumah, untuk kembali setelah berpetualang.
+Itu dahulu, aku merasa mempunyai suatu tempat di dunia. Ketika aku merasa mempunyai teman, keluarga, rumah, untuk kembali setelah berpetualang.
 
 
 Sekarang, setiap malam, ada perasaan yang mengganjal. Aku bersyukur memang, kesukaanku untuk membaca buku telah kembali. Kini aku dapat menghabiskan beberapa buku dalam satu bulan. Tapi, pikiran lama yang aku rasa ku tempatkan di sudut belakang kepala kembali hadir.
