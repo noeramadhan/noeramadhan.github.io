@@ -38,13 +38,8 @@
             font-feature-settings: "kern";
             font-kerning: normal;
         }
-        
-        a {
-            color: black;
-        }
-        
+
         a:hover {
-            color: black;
             text-decoration: none;
             padding-bottom: .15rem;
             border-bottom: .15rem black solid;
@@ -93,7 +88,8 @@
     <div class="app mx-auto px-3">
         <div class="card card-body p-0 m-0 mb-4 border-0">
             <div class="row container header py-2 mx-auto px-0">
-                <div class="col"><a href="#"><span class="font-weight-bold">I|I</span></a></div>
+                <div class="col"><a href="#" id="home"><span class="font-weight-bold">I|I</span></a></div>
+                <div class="col"><span class="font-weight-bold float-right" onclick="bgcheck()" style="cursor: pointer; user-select: none;">&#x263C</span></div>
             </div>
             <section class="content container px-3 py-0 mt-4"></section>
         </div>
@@ -109,7 +105,34 @@
             $(window).on('hashchange', route);
         });
 
+        function bgcheck(){
+            document.body.style.background=="black"?bgchange(1):bgchange(0);
+        }
+
+        function bgchange(param){
+            document.body.style.background = param==0?"black":"white";
+            document.body.style.content = param==0?"white":"black";
+            document.getElementsByClassName('card')[0].style.background = param==0?"black":"white";
+            document.getElementsByClassName('card')[0].style.color = param==0?"white":"black";
+            var len = document.getElementsByTagName('a').length;
+            for(var i = 0; i<len; i++){
+                document.getElementsByTagName('a')[i].style.color = param==0?"white":"black";
+                document.getElementsByTagName('a')[i].onmouseover = function() {
+                    this.style.borderColor = param==0?"white":"black";
+                }
+            }
+            var len = document.getElementsByClassName('list-title').length;
+            for(var i = 0; i<len; i++){
+                document.getElementsByClassName('list-title')[i].style.color = param==0?"white":"black";
+                document.getElementsByClassName('list-title')[i].onmouseover = function() {
+                    this.style.borderColor = param==0?"white":"black";
+                }
+            }
+
+        }
+
         function route() {
+            if(document.body.style.background === "black"){bgchange(0)}else{bgchange(1)}
             document.getElementsByClassName('content')[0].innerHTML = "";
             location.hash ? read((location.hash).slice(1)) : list(null);
         }
@@ -162,18 +185,19 @@
                     content += '<div class="row mt-4 mb-3"><div class="col">' + ((now < (Math.ceil(data.posts.length / 10))) ? '<a class="list-title font-weight-bold" href="#p-' + (+now + 1) + '">< Prev</a>' : '') + '</div><div class="col text-right">' + ((now > 1) ? '<a class="list-title font-weight-bold" href="#p-' + (+now - 1) + '">Next ></a>' : '') + '</div></div>';
                     document.getElementsByClassName('content')[0].innerHTML += content;
                     document.title = "I|I";
+                    if(document.body.style.background === "black"){bgchange(0)}else{bgchange(1)}
                 }
             };
             xhr.send();
         }
         async function onLoadAsync() {
-            if (navigator.serviceWorker) {
-                try {
-                    let serviceWorker = await navigator.serviceWorker.register('service.js')
-                } catch (err) {
-                    console.error(`Failed ${err}`)
-                }
-            }
+            // if (navigator.serviceWorker) {
+            //    try {
+            //        let serviceWorker = await navigator.serviceWorker.register('service.js')
+            //    } catch (err) {
+            //        console.error(`Failed ${err}`)
+            //    }
+            // }
         }
     </script>
 </body>
