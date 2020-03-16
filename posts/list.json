@@ -24,5 +24,6 @@
     { "date": "10/3/2020",  "title": "Tentang Ketakutan",                                                         "slug": "ketakutan"                                               },
     { "date": "11/3/2020",  "title": "Tentang Makan",                                                             "slug": "makan"                                                   },
     { "date": "13/3/2020",  "title": "Tentang Dini Hari",                                                         "slug": "dini-hari"                                               },
-    { "date": "14/3/2020",  "title": "Tentang Kerja",                                                             "slug": "kerja"                                                   }
+    { "date": "14/3/2020",  "title": "Tentang Kerja",                                                             "slug": "kerja"                                                   },
+    { "date": "14/3/2020",  "title": "Tentang Bercerieta",                                                        "slug": "bercerieta"                                              }
 ]}
