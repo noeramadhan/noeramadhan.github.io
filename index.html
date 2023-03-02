@@ -1,1 +1,177 @@
-<html><head><title>github</title></head><body bgcolor="black"></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=".">
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="data:,">
+    <link rel="apple-touch-icon" href="data:,">
+    <title>Noer Ramadhan</title>
+    <style>
+        :root {
+            --color-bg: 0, 0, 0;
+            --color: 250, 250, 250;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            background-color: rgb(var(--color-bg));
+            color: rgba(var(--color), 0.5);
+            font-family: 'Roboto Mono', monospace;
+            letter-spacing: -0.025rem;
+            text-rendering: optimizeLegibility;
+            font-feature-settings: "kern";
+            font-kerning: normal;
+        }
+
+        html {
+            font-size: 18px;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: row;
+            padding: 0 2.5rem;
+            align-items: center;
+            line-height: 1.8;
+        }
+
+        .not-muted {
+            color: rgba(var(--color), 1);
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgba(var(--color), 0.5)
+        }
+
+        a:hover {
+            color: rgba(var(--color), 1);
+        }
+
+        .app {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            max-width: 65ch;
+            margin-top: 30vh
+        }
+        .footer {
+            margin-bottom: 2rem;
+        }
+
+        .works {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .work__item {
+            flex: 0 0 20rem;
+        }
+
+        .work__item h3 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .work__item p {
+            margin-bottom: 1rem;
+        }
+
+        .language {
+            color: rgba(var(--color), 0.8)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <h1>Hi! I'm <span class="not-muted">Noer Ramadhan</span></h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia est quod laboriosam explicabo dolorum
+                doloremque, labore suscipit aperiam quasi voluptatum harum, illo corporis architecto. Nulla quaerat
+                praesentium similique ipsam quia?
+            </p>
+            <div class="links">
+                <h5 class="link__item"><a href="mailto:noeramadhan0@gmail.com" target="_blank">Email</a></h5>
+                <h5 class="link__item"><a href="https://www.linkedin.com/in/noer-ramadhan" target="_blank">LinkedIn</a></h5>
+                <h5 class="link__item"><a href="https://github.com/noeramadhan" target="_blank">Github</a></h5>
+            </div>
+        </div>
+        <h2>Works</h2>
+        <div class="works">
+            <div class="work__item">
+                <h3 class="not-muted">Indonesian Words Randomizer</h3>
+                <p>
+                    Randomize Indonesian words with the definition. Created to help me find ideas for writing.
+                </p>
+                <p class="language">
+                    Javascript
+                </p>
+                <p class="stack">
+                    Built with: Node.js
+                </p>
+                <p>
+                    Repository: <a href="https://github.com/noeramadhan/indonesian-words-randomizer"
+                        target="_blank">Available</a>
+                </p>
+            </div>
+            <div class="work__item">
+                <h3 class="not-muted">Basic REST API with simple unit testing</h3>
+                <p>
+                    Basic Implementation of Test-Driven Development by developing simple CRUD REST API.
+                </p>
+                <p class="language">
+                    Javascript
+                </p>
+                <p class="stack">
+                    Built with: Node.js, Express.js, Jest
+                </p>
+                <p>
+                    Repository: N/A
+                </p>
+            </div>
+            <div class="work__item">
+                <h3 class="not-muted">TOPSIS Method Implementation</h3>
+                <p>
+                    Implementation of TOPSIS method from artificial intelligence course.
+                </p>
+                <p class="language">
+                    CSS, HTML, Javascript
+                </p>
+                <p class="stack">
+                    Built with: jQuery, Bootstrap
+                </p>
+                <p>
+                    Repository: <a href="https://github.com/noeramadhan/topsis" target="_blank">Available</a>
+                </p>
+            </div>
+        </div>
+        <span class="footer">&hearts; 2023</span>
+    </div>
+
+</body>
+
+</html>
